@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="no-js industrial-theme-v21">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="IMEX GROUP - Global Leader in High-Precision Metallurgy, Industrial Piping Systems, and Construction Engineering Solutions.">
+    <meta name="keywords" content="Seamless Pipes, Steel Construction, Uzbekistan Metallurgy, Industrial Valves, IMEX GROUP, Engineering">
+    <meta name="author" content="IMEX GROUP DEPT.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imexgroup.uz/">
+    <meta property="og:title" content="IMEX GROUP | Building the Industrial Future">
+    <meta property="og:description" content="Advanced metallurgical solutions for global infrastructure projects.">
+    <meta property="og:image" content="assets/img/og-preview.jpg">
+
+    <title>IMEX GROUP ® | Excellence in Metallurgy & Industrial Solutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preload" href="app.js" as="script">
+</head>
+
+<body class="is-loading-state scroll-locked">
+
+    <div id="imex-preloader" class="preloader-portal">
+        <div class="preloader-background">
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="branding-animation">
+                <svg class="main-logo-svg" viewBox="0 0 100 100">
+                    <path class="logo-path" d="M20 20 L80 20 L80 80 L20 80 Z" fill="none" stroke="white" stroke-width="1"/>
+                    <path class="logo-inner" d="M40 40 L60 40 L60 60 L40 60 Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar-fill" id="load-progress"></div>
+            </div>
+            <div class="loading-meta">
+                <span class="status-text" data-t="loading_init">SYSTEM INITIALIZING</span>
+                <span class="percentage" id="load-perc">0%</span>
+            </div>
+        </div>
+        <div class="preloader-curtain left"></div>
+        <div class="preloader-curtain right"></div>
+    </div>
+
+    <header class="imex-nav-system" id="main-nav">
+        <div class="nav-blur-layer"></div>
+        <div class="nav-container-wide">
+            
+            <div class="nav-brand-block">
+                <a href="#home" class="brand-anchor" aria-label="IMEX GROUP Home">
+                    <div class="logo-composite">
+                        <span class="symbol">I</span>
+                        <div class="text-stack">
+                            <span class="brand-name">IMEX<span class="heavy">GROUP</span></span>
+                            <span class="brand-tagline">INDUSTRIAL EXCELLENCE</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="nav-main-menu" role="navigation">
+                <ul class="nav-list-master">
+                    <li class="nav-item-root active">
+                        <a href="#home" class="nav-link-v2">
+                            <span class="nav-index">01</span>
+                            <span class="nav-label" data-t="nav_home">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item-root has-dropdown-v2">
+                        <a href="#catalog" class="nav-link-v2">
+                            <span class="nav-index">02</span>
+                            <span class="nav-label" data-t="nav_catalog">Catalog</span>
+                            <svg class="drop-icon" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1L5 5L9 1" stroke="currentColor" fill="none"/></svg>
+                        </a>
+                        <div class="mega-portal-v2">
+                            <div class="mega-grid-v2">
+                                <div class="mega-col-info">
+                                    <h3 class="mega-head" data-t="cat_featured">Featured Products</h3>
+                                    <p class="mega-desc">Explore our top-tier industrial steel and hardware solutions.</p>
+                                    <a href="#catalog" class="mega-cta">View All Catalog ➔</a>
+                                </div>
+                                <div class="mega-col-links">
+                                    <h4 data-t="cat_pipes">Piping Systems</h4>
+                                    <ul class="mega-sub-list">
+                                        <li><a href="#">Seamless Steel (ASTM)</a></li>
+                                        <li><a href="#">Stainless Steel (AISI)</a></li>
+                                        <li><a href="#">Galvanized Protective</a></li>
+                                        <li><a href="#">High-Pressure Alloy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col-links">
+                                    <h4 data-t="cat_struc">Structural Steel</h4>
+                                    <ul class="mega-sub-list">
+                                        <li><a href="#">H-Beams & I-Beams</a></li>
+                                        <li><a href="#">Reinforcement Bar</a></li>
+                                        <li><a href="#">Hot Rolled Sheets</a></li>
+                                        <li><a href="#">Precision Profiles</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col-links">
+                                    <h4 data-t="cat_inst">Instrumentation</h4>
+                                    <ul class="mega-sub-list">
+                                        <li><a href="#">Digital Pressure Gauges</a></li>
+                                        <li><a href="#">Industrial Sensors</a></li>
+                                        <li><a href="#">Flow Meters</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item-root">
+                        <a href="#projects" class="nav-link-v2">
+                            <span class="nav-index">03</span>
+                            <span class="nav-label" data-t="nav_projects">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item-root">
+                        <a href="#about" class="nav-link-v2">
+                            <span class="nav-index">04</span>
+                            <span class="nav-label" data-t="nav_about">Company</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-interaction-suite">
+                
+                <div class="lang-portal-v2" id="lang-switcher">
+                    <button class="lang-trigger-v2">
+                        <span class="current-code">UZ</span>
+                        <svg class="lang-globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+                    </button>
+                    <div class="lang-list-v2">
+                        <button class="lang-opt" onclick="engine.setLang('uz')">O'zbekcha</button>
+                        <button class="lang-opt" onclick="engine.setLang('ru')">Русский</button>
+                        <button class="lang-opt" onclick="engine.setLang('en')">English</button>
+                    </div>
+                </div>
+
+                <div class="cart-portal-v2" onclick="ui.toggleCart()">
+                    <div class="cart-icon-stack">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                        <span class="cart-badge-v2" id="cart-counter">0</span>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-v2" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <span class="bar top"></span>
+                    <span class="bar mid"></span>
+                    <span class="bar bot"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="smooth-scroll-container" id="main-view">
+
+        <section class="hero-master-v21" id="home">
+            <div class="hero-bg-canvas">
+                <div class="noise-overlay"></div>
+                <div class="gradient-core"></div>
+            </div>
+            
+            <div class="container-master">
+                <div class="hero-layout-grid">
+                    
+                    <div class="hero-content-block">
+                        <div class="hero-eyebrow-wrap" data-aos="fade-right">
+                            <span class="eyebrow-line"></span>
+                            <span class="eyebrow-text" data-t="hero_badge">UZBEKISTAN'S INDUSTRIAL LEADER</span>
+                        </div>
+                        
+                        <h1 class="hero-massive-headline">
+                            <div class="h-line line-1">
+                                <span class="h-word fill">BUILDING</span>
+                            </div>
+                            <div class="h-line line-2">
+                                <span class="h-word outline">THE FUTURE</span>
+                            </div>
+                            <div class="h-line line-3">
+                                <span class="h-word fill highlight">IMEX GROUP</span>
+                            </div>
+                        </h1>
+
+                        <p class="hero-para-v21" data-t="hero_desc">
+                            We don't just supply products; we provide a reliable foundation for the infrastructure of tomorrow. 
+                            Global standards, local expertise.
+                        </p>
+
+                        <div class="hero-action-v21">
+                            <button class="imex-btn-v21 primary" onclick="ui.scroll('#catalog')">
+                                <span class="btn-circle"></span>
+                                <span class="btn-label" data-t="btn_catalog">Explore Catalog</span>
+                            </button>
+                            <button class="imex-btn-v21 ghost" onclick="ui.scroll('#about')">
+                                <span class="btn-label" data-t="btn_contact">Contact Us</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-metric-side">
+                        <div class="metric-v21" data-aos="fade-up" data-aos-delay="200">
+                            <span class="m-val counter-trigger" data-target="15000">0</span>
+                            <span class="m-unit">Tons/Year</span>
+                            <p class="m-label">Steel Production</p>
+                        </div>
+                        <div class="metric-v21" data-aos="fade-up" data-aos-delay="400">
+                            <span class="m-val counter-trigger" data-target="24">0</span>
+                            <span class="m-unit">/7 Support</span>
+                            <p class="m-label">Logistics Core</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hero-scroll-v21">
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">SCROLL TO DISCOVER</span>
+            </div>
+        </section>
+
+<section class="catalog-v21-section" id="catalog">
+            <div class="container-master">
+                
+                <div class="catalog-meta-header" data-aos="fade-up">
+                    <div class="m-title-block">
+                        <div class="m-badge">STOCKS 2026</div>
+                        <h2 class="m-headline" data-t="cat_title">Industrial Arsenal</h2>
+                        <p class="m-subtitle" data-t="cat_sub">Certified metallurgy according to DIN, ASTM, and GOST international protocols.</p>
+                    </div>
+                    
+                    <div class="catalog-controls-v21">
+                        <div class="control-label" data-t="f_filter_by">Filter Systems:</div>
+                        <div class="pill-container" id="filter-pills">
+                            <button class="pill-v21 active" data-filter="all" data-t="f_all">
+                                <span class="p-icon">⬢</span> All Assets
+                            </button>
+                            <button class="pill-v21" data-filter="pipes" data-t="cat_pipes">
+                                <span class="p-icon">|</span> Piping
+                            </button>
+                            <button class="pill-v21" data-filter="structural" data-t="cat_struc">
+                                <span class="p-icon">▲</span> Structural
+                            </button>
+                            <button class="pill-v21" data-filter="tech" data-t="cat_inst">
+                                <span class="p-icon">◆</span> Tech & Tools
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dynamic-industrial-grid" id="catalog-mount-point">
+                    
+                    <div class="asset-card-v21" data-category="pipes" data-aos="zoom-in-up">
+                        <div class="asset-visual-engine">
+                            <div class="asset-overlay-tags">
+                                <span class="tag-status">In Stock</span>
+                                <span class="tag-grade">ASTM A106</span>
+                            </div>
+                            <div class="asset-image-skeleton">
+                                <div class="glimmer-effect"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="asset-content-v21">
+                            <div class="asset-header">
+                                <span class="asset-serial">SKU: IM-PIPE-001</span>
+                                <h3 class="asset-title" data-t="p_seamless_name">Seamless High-Pressure Pipe</h3>
+                            </div>
+                            
+                            <div class="asset-spec-table">
+                                <div class="spec-row">
+                                    <span class="s-label">Material</span>
+                                    <span class="s-value">Steel 20 / 09G2S</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="s-label">Diameter</span>
+                                    <span class="s-value">21.3mm — 720mm</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="s-label">Wall Thickness</span>
+                                    <span class="s-value">2mm — 60mm</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="s-label">Standard</span>
+                                    <span class="s-value">DIN 2448 / EN 10210</span>
+                                </div>
+                            </div>
+
+                            <div class="asset-interaction-block">
+                                <div class="asset-pricing">
+                                    <span class="p-currency">UZS</span>
+                                    <span class="p-amount counter-trigger" data-target="1450000">0</span>
+                                    <span class="p-unit">/ meter</span>
+                                </div>
+                                <button class="add-to-cart-v21" onclick="engine.cart.add('PX-001')">
+                                    <span class="btn-icon">+</span>
+                                    <span class="btn-text" data-t="btn_order">Add to Order</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-card-v21" data-category="structural" data-aos="zoom-in-up" data-aos-delay="100">
+                        <div class="asset-visual-engine">
+                            <div class="asset-overlay-tags">
+                                <span class="tag-status special">Hot Price</span>
+                                <span class="tag-grade">S355JR</span>
+                            </div>
+                            <div class="asset-image-skeleton"></div>
+                        </div>
+                        
+                        <div class="asset-content-v21">
+                            <div class="asset-header">
+                                <span class="asset-serial">SKU: IM-BEAM-442</span>
+                                <h3 class="asset-title" data-t="p_beam_name">Wide Flange H-Beam</h3>
+                            </div>
+                            
+                            <div class="asset-spec-table">
+                                <div class="spec-row">
+                                    <span class="s-label">Height Range</span>
+                                    <span class="s-value">100mm — 1000mm</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="s-label">Steel Class</span>
+                                    <span class="s-value">S235JR / S355J2</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="s-label">Length</span>
+                                    <span class="s-value">6m / 12m Standard</span>
+                                </div>
+                            </div>
+
+                            <div class="asset-interaction-block">
+                                <div class="asset-pricing">
+                                    <span class="p-currency">UZS</span>
+                                    <span class="p-amount counter-trigger" data-target="9800000">0</span>
+                                    <span class="p-unit">/ ton</span>
+                                </div>
+                                <button class="add-to-cart-v21" onclick="engine.cart.add('BM-442')">
+                                    <span class="btn-icon">+</span>
+                                    <span class="btn-text" data-t="btn_order">Add to Order</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-card-v21" data-category="tech" data-aos="zoom-in-up" data-aos-delay="200">
+                        <div class="asset-visual-engine">
+                            <div class="asset-overlay-tags">
+                                <span class="tag-status">Tech-Spec</span>
+                                <span class="tag-grade">PN40 / ANSI 300</span>
+                            </div>
+                            <div class="asset-image-skeleton"></div>
+                        </div>
+                        
+                        <div class="asset-content-v21">
+                            <div class="asset-header">
+                                <span class="asset-serial">SKU: IM-VALVE-99</span>
+                                <h3 class="asset-title" data-t="p_valve_name">High-Pressure Ball Valve</h3>
+                            </div>
+                            
+                            <div class="asset-spec-table">
+                                <div class="spec-row">
+                                    <span class="s-label">Body Material</span>
+                                    <span class="s-value">WCB Carbon Steel</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="s-label">Max Pressure</span>
+                                    <span class="s-value">4.0 MPa (600 PSI)</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="s-label">Temp Range</span>
+                                    <span class="s-value">-29°C to +425°C</span>
+                                </div>
+                            </div>
+
+                            <div class="asset-interaction-block">
+                                <div class="asset-pricing">
+                                    <span class="p-currency">UZS</span>
+                                    <span class="p-amount counter-trigger" data-target="3250000">0</span>
+                                    <span class="p-unit">/ unit</span>
+                                </div>
+                                <button class="add-to-cart-v21" onclick="engine.cart.add('VL-099')">
+                                    <span class="btn-icon">+</span>
+                                    <span class="btn-text" data-t="btn_order">Add to Order</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <div class="catalog-footer-v21" data-aos="fade-up">
+                    <div class="catalog-stats">
+                        Showing <span id="current-count">3</span> of <span id="total-count">1280</span> unique SKUs
+                    </div>
+                    <button class="load-more-v21" id="btn-load-more">
+                        <span class="loader-circle"></span>
+                        <span class="btn-label" data-t="btn_load_more">Synchronize More Data</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blueprint-v21-section" id="specs">
+            <div class="blueprint-parallax-bg"></div>
+            <div class="container-master">
+                <div class="blueprint-grid">
+                    <div class="blueprint-info" data-aos="fade-right">
+                        <h2 class="bp-headline" data-t="bp_title">Engineering Precision</h2>
+                        <div class="bp-tabs">
+                            <button class="bp-tab active" data-tab="tolerances">Tolerances</button>
+                            <button class="bp-tab" data-tab="chemistry">Chemical Matrix</button>
+                            <button class="bp-tab" data-tab="mechanics">Mechanical Proof</button>
+                        </div>
+                        <div class="bp-content-mount" id="bp-info-mount">
+                            <p class="bp-description">Our products undergo ultrasonic testing (UT), eddy current testing (ET), and hydrostatic pressure validation to ensure 100% compliance with ISO 9001:2026 standards.</p>
+                            <ul class="bp-feature-list">
+                                <li>Zero Defect Manufacturing Policy</li>
+                                <li>Full Chemical Traceability (Heat Number)</li>
+                                <li>Third-party Inspection (SGS, TUV) Available</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="blueprint-visual" data-aos="flip-left">
+                        <div class="blueprint-canvas-wrapper">
+                            <svg class="blueprint-svg" viewBox="0 0 500 300">
+                                <rect x="50" y="50" width="400" height="200" class="bp-shape" />
+                                <line x1="50" y1="150" x2="450" y2="150" class="bp-line-dim" />
+                                <text x="210" y="40" class="bp-text-meta">AXIAL TOLERANCE: ±0.05mm</text>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistics-v21-section" id="logistics">
+            <div class="logistics-orbital-bg"></div>
+            <div class="container-master">
+                <div class="logistics-grid">
+                    
+                    <div class="logistics-content" data-aos="fade-right">
+                        <div class="section-label">03 / SUPPLY CHAIN</div>
+                        <h2 class="logistics-headline" data-t="log_title">Reliability Without Borders</h2>
+                        <p class="logistics-text" data-t="log_desc">
+                            We have optimized the metallurgical supply chain for the Central Asian region. 
+                            Our logistics hub ensures 24/7 monitoring of cargo and compliance with storage temperature regimes.
+                        </p>
+                        
+                        <div class="logistics-matrix">
+                            <div class="matrix-item">
+                                <div class="m-icon-wrap">
+                                    <svg viewBox="0 0 24 24" class="m-svg"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" fill="none"/></svg>
+                                </div>
+                                <div class="m-info">
+                                    <h4 data-t="log_f1_t">Multimodal Transport</h4>
+                                    <p data-t="log_f1_d">Rail, Road, and Air delivery options specialized for oversized steel structures.</p>
+                                </div>
+                            </div>
+                            <div class="matrix-item">
+                                <div class="m-icon-wrap">
+                                    <svg viewBox="0 0 24 24" class="m-svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" fill="none"/></svg>
+                                </div>
+                                <div class="m-info">
+                                    <h4 data-t="log_f2_t">Customs Clearance</h4>
+                                    <p data-t="log_f2_d">Full legal support and documentation for international export-import operations.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="route-tracker-v21">
+                            <h5 class="tracker-title">Active Supply Corridors:</h5>
+                            <ul class="route-list">
+                                <li class="route-item">
+                                    <span class="r-dot"></span>
+                                    <span class="r-path">EU ➔ Tashkent Hub</span>
+                                    <span class="r-time">12-14 Days</span>
+                                </li>
+                                <li class="route-item">
+                                    <span class="r-dot active"></span>
+                                    <span class="r-path">China ➔ Samarkand Base</span>
+                                    <span class="r-time">8-10 Days</span>
+                                </li>
+                                <li class="route-item">
+                                    <span class="r-dot"></span>
+                                    <span class="r-path">CIS ➔ Industrial Zones</span>
+                                    <span class="r-time">5-7 Days</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="logistics-visual" data-aos="zoom-in-left">
+                        <div class="map-container-v21">
+                            <div class="map-overlay-v21">
+                                <div class="pulse-point" style="top:45%; left:62%"></div>
+                                <div class="pulse-point" style="top:40%; left:55%"></div>
+                                <div class="pulse-point active" style="top:52%; left:68%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-v21-section" id="projects">
+            <div class="container-master">
+                <header class="portfolio-header">
+                    <h2 class="p-headline" data-t="proj_title">Proven Resilience</h2>
+                    <div class="p-filter-group">
+                        <button class="p-filter active">All Sectors</button>
+                        <button class="p-filter">Oil & Gas</button>
+                        <button class="p-filter">Civil Infra</button>
+                        <button class="p-filter">Energy</button>
+                    </div>
+                </header>
+
+                <div class="portfolio-slider-v21">
+                    <div class="project-case-v21" data-aos="fade-up">
+                        <div class="case-image-context">
+                            <div class="case-meta-float">2025 COMPLETED</div>
+                        </div>
+                        <div class="case-details">
+                            <span class="case-cat">Gas Infrastructure</span>
+                            <h3>Navoi Chemical Plant Expansion</h3>
+                            <p>Supply of 4,500 tons of seamless pipes and high-pressure valves for the new processing unit.</p>
+                            <div class="case-stats-grid">
+                                <div class="cs-item">
+                                    <span class="cs-val">4.5k</span>
+                                    <span class="cs-label">Tons Steel</span>
+                                </div>
+                                <div class="cs-item">
+                                    <span class="cs-val">100%</span>
+                                    <span class="cs-label">API 5L Compliant</span>
+                                </div>
+                            </div>
+                            <a href="#" class="case-link-v21">View Technical Case ➔</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qa-v21-section">
+            <div class="container-master">
+                <div class="qa-grid-v21">
+                    <div class="qa-certs-row">
+                        <div class="cert-card-v21">
+                            <div class="cert-icon">ISO</div>
+                            <div class="cert-info">
+                                <strong>9001:2026</strong>
+                                <span>Quality Management</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-v21">
+                            <div class="cert-icon">ASTM</div>
+                            <div class="cert-info">
+                                <strong>International</strong>
+                                <span>Material Testing</span>
+                            </div>
+                        </div>
+                        <div class="cert-card-v21">
+                            <div class="cert-icon">DIN</div>
+                            <div class="cert-info">
+                                <strong>EN 10210</strong>
+                                <span>Structural Standards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-v21-section" id="contact">
+            <div class="container-master">
+                <div class="contact-card-v21">
+                    <div class="contact-info-panel">
+                        <h2 data-t="form_title">Request a Technical Quote</h2>
+                        <p>Attach your project specifications (PDF/XLS) for a precise estimation within 4 hours.</p>
+                        
+                        <div class="contact-methods-v21">
+                            <div class="c-method">
+                                <span class="c-icon">✉</span>
+                                <div class="c-text">
+                                    <label>Email Sales</label>
+                                    <a href="mailto:sales@imexgroup.uz">sales@imexgroup.uz</a>
+                                </div>
+                            </div>
+                            <div class="c-method">
+                                <span class="c-icon">☎</span>
+                                <div class="c-text">
+                                    <label>Phone Line</label>
+                                    <a href="tel:+998711234567">+998 (71) 123-45-67</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <form id="industrial-order-form" class="v21-form">
+                            <div class="form-row-v21">
+                                <div class="input-group-v21">
+                                    <label>Full Name / Company</label>
+                                    <input type="text" name="client_name" placeholder="Enter details..." required>
+                                </div>
+                                <div class="input-group-v21">
+                                    <label>Contact Phone</label>
+                                    <input type="tel" name="client_phone" placeholder="+998" required>
+                                </div>
+                            </div>
+                            <div class="input-group-v21">
+                                <label>Product Category</label>
+                                <select name="product_type">
+                                    <option value="pipes">Piping Systems</option>
+                                    <option value="structural">Structural Steel</option>
+                                    <option value="valves">Industrial Valves</option>
+                                    <option value="other">Custom Request</option>
+                                </select>
+                            </div>
+                            <div class="input-group-v21">
+                                <label>Detailed Message / Specifications</label>
+                                <textarea name="message" rows="5" placeholder="Dimensions, steel grade, quantity..."></textarea>
+                            </div>
+                            <div class="form-footer-v21">
+                                <div class="file-upload-v21">
+                                    <input type="file" id="spec-file" hidden>
+                                    <label for="spec-file" class="file-label">📎 Attach Specs</label>
+                                </div>
+                                <button type="submit" class="submit-btn-v21">
+                                    <span class="btn-load"></span>
+                                    <span>Send Inquiry</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="imex-footer-v21">
+            <div class="footer-top-engine">
+                <div class="container-master">
+                    <div class="footer-grid-v21">
+                        
+                        <div class="f-col brand-col">
+                            <div class="f-logo">
+                                <span class="symbol">I</span>
+                                <span class="text">IMEX<small>GROUP</small></span>
+                            </div>
+                            <p class="f-description">
+                                Leading the industrial evolution through metallurgical excellence and supply chain innovation since 2010. 
+                                Providing certified solutions for energy, oil, and civil infrastructure.
+                            </p>
+                            <div class="f-social-suite">
+                                <a href="#" aria-label="LinkedIn" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                                <a href="#" aria-label="Telegram" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.462 8.35l-1.637 7.711c-.123.553-.454.689-.915.431l-2.493-1.839-1.203 1.157c-.134.133-.245.244-.502.244l.179-2.544 4.629-4.183c.201-.178-.044-.277-.311-.099l-5.723 3.603-2.463-.77c-.535-.168-.546-.535.112-.792l9.623-3.708c.445-.162.834.103.704.759z"/></svg></a>
+                            </div>
+                        </div>
+
+                        <div class="f-col">
+                            <h4 class="f-title" data-t="f_nav">Sitemap</h4>
+                            <ul class="f-links">
+                                <li><a href="#home">Main Infrastructure</a></li>
+                                <li><a href="#catalog">Product Inventory</a></li>
+                                <li><a href="#logistics">Supply Corridors</a></li>
+                                <li><a href="#projects">Global Projects</a></li>
+                                <li><a href="#contact">Technical Inquiry</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="f-col">
+                            <h4 class="f-title" data-t="f_solutions">Solutions</h4>
+                            <ul class="f-links">
+                                <li><a href="#">Oil & Gas Engineering</a></li>
+                                <li><a href="#">Hydro-Electric Power</a></li>
+                                <li><a href="#">Residential Structural</a></li>
+                                <li><a href="#">Special Alloy Casting</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="f-col">
+                            <h4 class="f-title" data-t="f_offices">HQ Uzbekistan</h4>
+                            <ul class="f-contact-info">
+                                <li>
+                                    <span class="label">Main Hub:</span>
+                                    <address>Tashkent, Industrial Zone South, Bld 42</address>
+                                </li>
+                                <li>
+                                    <span class="label">Logistics:</span>
+                                    <address>Samarkand, Route E-40 Logistic Center</address>
+                                </li>
+                                <li>
+                                    <span class="label">24/7 Support:</span>
+                                    <a href="tel:+998711234567">+998 (71) 123-45-67</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div class="container-master flex-bar">
+                    <div class="copyright">© 2026 IMEX GROUP LLC. All technical rights reserved.</div>
+                    <div class="legal-links">
+                        <a href="#">Quality Assurance Policy</a>
+                        <a href="#">Compliance & Ethics</a>
+                        <a href="#">Privacy Protocol</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main> <div class="cart-drawer-v21" id="global-cart">
+        <div class="cart-overlay" onclick="ui.toggleCart()"></div>
+        <div class="cart-inner-v21">
+            <div class="cart-header-v21">
+                <div class="ch-left">
+                    <h3 data-t="cart_title">Order Pipeline</h3>
+                    <span class="item-count-v21" id="cart-item-count">0 items</span>
+                </div>
+                <button class="cart-close-v21" onclick="ui.toggleCart()">&times;</button>
+            </div>
+            
+            <div class="cart-body-v21" id="cart-items-mount">
+                <div class="empty-state-v21">
+                    <div class="empty-icon">📂</div>
+                    <p data-t="cart_empty">Your industrial inquiry list is empty.</p>
+                </div>
+            </div>
+
+            <div class="cart-summary-v21">
+                <div class="summary-row">
+                    <span>Est. Total Weight:</span>
+                    <span id="total-weight">0.00 kg</span>
+                </div>
+                <div class="summary-row total">
+                    <span data-t="total">Total Value:</span>
+                    <span id="total-price">0 UZS</span>
+                </div>
+                <button class="order-submit-v21" onclick="engine.checkout()">
+                    <span class="label" data-t="btn_order">Finalize Technical Quote</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" fill="none" stroke-width="2"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-portal-v21" id="tech-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container-v21">
+            <button class="modal-close" onclick="ui.closeModal()">&times;</button>
+            <div class="modal-grid-v21">
+                <div class="modal-visual-v21">
+                    <div id="blueprint-zoom-engine"></div>
+                </div>
+                <div class="modal-info-v21" id="modal-content-mount">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script src="app.js"></script>
+
+    <script>
+        // Inline AOS Initialization to prevent layout shift
+        AOS.init({ duration: 800, easing: 'ease-out-quart', once: true });
+    </script>
+</body>
+</html>
